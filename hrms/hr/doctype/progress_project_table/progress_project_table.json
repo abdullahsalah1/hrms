@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-14 10:24:32.358117",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "link_jqtm",
+  "gavernarate",
+  "name1",
+  "namear",
+  "phone_number",
+  "quantity_of_targeted_group",
+  "days",
+  "sites",
+  "qnt_of_days",
+  "photos",
+  "tools",
+  "report",
+  "stats_of_approval"
+ ],
+ "fields": [
+  {
+   "fetch_from": ".governorate_en",
+   "fieldname": "gavernarate",
+   "fieldtype": "Select",
+   "label": "Gavernarate",
+   "options": "Abyan\nAden\nAmran\nAl-Baydha\nCapital City of Sana'a\nAl-Dhalea\nDhamar\nHadhramout\nHajjah\nAl-Hodeidah\nIbb\nAl-Jawf\nLahj\nAl-Mahra\nAl-Mahweet\nMarib\nRaymah\nSa'adah\nSana'a\nShabwah\nSocotra\nTaiz"
+  },
+  {
+   "fetch_from": ".enumerator_name_en",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fetch_from": ".cell_number",
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone number"
+  },
+  {
+   "fieldname": "qnt_of_days",
+   "fieldtype": "Data",
+   "label": "BNFs"
+  },
+  {
+   "fieldname": "photos",
+   "fieldtype": "Select",
+   "label": "PHOTOS",
+   "options": "\nDone"
+  },
+  {
+   "fieldname": "tools",
+   "fieldtype": "Select",
+   "label": "TOOLS",
+   "options": "\nDone"
+  },
+  {
+   "fieldname": "report",
+   "fieldtype": "Select",
+   "label": "Report",
+   "options": "\nDone"
+  },
+  {
+   "fieldname": "stats_of_approval",
+   "fieldtype": "Select",
+   "label": " stats of Approval",
+   "options": "\nApproved"
+  },
+  {
+   "fetch_from": ".enumerator_name_ar",
+   "fieldname": "namear",
+   "fieldtype": "Data",
+   "label": "\u0627\u0644\u0627\u0633\u0645"
+  },
+  {
+   "fieldname": "days",
+   "fieldtype": "Data",
+   "label": "Days"
+  },
+  {
+   "fieldname": "sites",
+   "fieldtype": "Data",
+   "label": "Sites"
+  },
+  {
+   "fieldname": "quantity_of_targeted_group",
+   "fieldtype": "Data",
+   "label": "quantity of targeted group"
+  },
+  {
+   "fieldname": "link_jqtm",
+   "fieldtype": "Link",
+   "options": "i-APS Enumerators"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-02-04 09:03:57.220186",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "progress project table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

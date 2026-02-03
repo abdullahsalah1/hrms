@@ -1,0 +1,214 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-10-23 08:46:58.494781",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_cbpz",
+  "date",
+  "asset_name",
+  "asset_category",
+  "asset_code",
+  "is_existing_asset",
+  "is_composite_asset",
+  "amended_from",
+  "naming_series",
+  "dep",
+  "emp_name",
+  "emp_code",
+  "oldcode",
+  "purchase_details_section",
+  "purchase_date",
+  "supplier",
+  "supporting_documents",
+  "asset_disposal_section",
+  "disposal_date",
+  "disposal_method",
+  "final_value",
+  "disposal_reason",
+  "status",
+  "notes",
+  "assets_location_section",
+  "location",
+  "location_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_cbpz",
+   "fieldtype": "Section Break",
+   "label": "Asset Details"
+  },
+  {
+   "fieldname": "asset_name",
+   "fieldtype": "Data",
+   "label": "Asset Name"
+  },
+  {
+   "fieldname": "asset_category",
+   "fieldtype": "Select",
+   "label": "Asset Category",
+   "options": "IT\nFurniture and Fixtures\nMachinery and Equipment\nSoftware Licenses"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_existing_asset",
+   "fieldtype": "Check",
+   "label": "Is Existing Asset"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_composite_asset",
+   "fieldtype": "Check",
+   "label": " Is Composite Asset"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Assets Management",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "purchase_details_section",
+   "fieldtype": "Section Break",
+   "label": "Purchase Details"
+  },
+  {
+   "fieldname": "purchase_date",
+   "fieldtype": "Date",
+   "label": "Purchase Date"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Data",
+   "label": "Supplier "
+  },
+  {
+   "fieldname": "supporting_documents",
+   "fieldtype": "Attach",
+   "label": "Supporting Documents"
+  },
+  {
+   "fieldname": "asset_disposal_section",
+   "fieldtype": "Section Break",
+   "label": "Asset Disposal"
+  },
+  {
+   "fieldname": "disposal_date",
+   "fieldtype": "Date",
+   "label": "Disposal Date"
+  },
+  {
+   "fieldname": "disposal_method",
+   "fieldtype": "Select",
+   "label": "Disposal Method"
+  },
+  {
+   "fieldname": "final_value",
+   "fieldtype": "Data",
+   "label": "Final Value"
+  },
+  {
+   "fieldname": "disposal_reason",
+   "fieldtype": "Select",
+   "label": "Disposal Reason"
+  },
+  {
+   "fieldname": "assets_location_section",
+   "fieldtype": "Section Break",
+   "label": "Assets Location"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming Series",
+   "options": "AS-.YY.-.{floor}.-.###",
+   "read_only": 1
+  },
+  {
+   "fieldname": "asset_code",
+   "fieldtype": "Data",
+   "label": "Asset Serial number"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Select",
+   "label": "Assets location",
+   "options": "Assigned Asset\nOffice Assets"
+  },
+  {
+   "fieldname": "location_code",
+   "fieldtype": "Data",
+   "label": "Location  code"
+  },
+  {
+   "fieldname": "dep",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "emp_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "emp_code",
+   "fieldtype": "Data",
+   "label": "Employee Code"
+  },
+  {
+   "fieldname": "oldcode",
+   "fieldtype": "Data",
+   "label": "Old code For the asset"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Data",
+   "label": "Notes"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-21 14:16:51.721826",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "Assets Management",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

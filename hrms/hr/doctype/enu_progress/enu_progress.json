@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-12 09:02:29.136740",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enumerator_name",
+  "total_wage",
+  "governarate_district",
+  "no_of_days",
+  "daily_wage",
+  "daily_wage__copy",
+  "transcomm1",
+  "transcomm",
+  "coordinator",
+  "total_receivables",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fetch_from": "contract.enumerator_name",
+   "fieldname": "enumerator_name",
+   "fieldtype": "Data",
+   "label": "Enumerator Name"
+  },
+  {
+   "fetch_from": "contract.governarate_district",
+   "fieldname": "governarate_district",
+   "fieldtype": "Data",
+   "label": "Governarate"
+  },
+  {
+   "fetch_from": "contract.total_wage",
+   "fieldname": "total_wage",
+   "fieldtype": "Data",
+   "label": "Phone number"
+  },
+  {
+   "fetch_from": "contract.total_wage",
+   "fieldname": "no_of_days",
+   "fieldtype": "Data",
+   "label": "No of Days"
+  },
+  {
+   "fetch_from": "contract.total_wage",
+   "fieldname": "daily_wage",
+   "fieldtype": "Data",
+   "label": " Daily Wage "
+  },
+  {
+   "fetch_from": "contract.total_wage",
+   "fieldname": "daily_wage__copy",
+   "fieldtype": "Data",
+   "label": " Daily Wage  Copy"
+  },
+  {
+   "fetch_from": "contract.total_wage",
+   "fieldname": "transcomm1",
+   "fieldtype": "Data",
+   "label": " Trans & Comm"
+  },
+  {
+   "fetch_from": "contract.total_wage",
+   "fieldname": "transcomm",
+   "fieldtype": "Data",
+   "label": "Total of Trans  Comm "
+  },
+  {
+   "fetch_from": "contract.total_wage",
+   "fieldname": "coordinator",
+   "fieldtype": "Data",
+   "label": "Coordinator"
+  },
+  {
+   "fetch_from": "contract.total_wage",
+   "fieldname": "total_receivables",
+   "fieldtype": "Data",
+   "label": "Total receivables"
+  },
+  {
+   "fetch_from": "contract.total_wage",
+   "fieldname": "notes",
+   "fieldtype": "Data",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-01-12 10:19:12.127094",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "ENU-progress",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

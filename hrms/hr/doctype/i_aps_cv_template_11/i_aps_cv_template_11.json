@@ -1,0 +1,463 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-09-14 13:31:00.196418",
+ "default_view": "List",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_details_tab",
+  "basic_information",
+  "naming_series",
+  "first_name",
+  "last_name",
+  "full_name",
+  "email",
+  "column_break_gmyt",
+  "nationality",
+  "other_nationality",
+  "gender",
+  "date_of_birth",
+  "cell_number",
+  "column_break_htzy",
+  "country",
+  "other_country",
+  "type_of_area",
+  "gov",
+  "governorate",
+  "district",
+  "current_address",
+  "tab_break_nr9v",
+  "language",
+  "do_you_have_a_training_of_the_trainers_tot_certificate",
+  "what_topic_of_certificate",
+  "how_many_master_certificate_do_you_have",
+  "masters_certificate",
+  "phds_certificate",
+  "how_many_phd_certificate_do_you_have",
+  "column_break_szfa",
+  "training_courses",
+  "qualification",
+  "how_many_diploma_certificate_do_you_have",
+  "diploma_certificate",
+  "how_many_bachelors_certificate_do_you_have",
+  "bachelors_certificate",
+  "other_certificate",
+  "experience_tab",
+  "have_you_work_with",
+  "humanitarian_and_other_technical_sectors",
+  "mention_other_sector",
+  "references",
+  "column_break_eiup",
+  "have_you_worked_with_i_aps",
+  "what_is_the_nature_of_the_work_with_the_company",
+  "number_of_years_of_experience",
+  "how_many_jobs_have_you_had",
+  "professional_experience",
+  "section_break_kjwh",
+  "id_card",
+  "front_id_card",
+  "back_id_card",
+  "passport",
+  "cv",
+  "agree_share_your_cv",
+  "post",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Overview"
+  },
+  {
+   "fieldname": "basic_information",
+   "fieldtype": "Section Break",
+   "oldfieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "no_copy": 1,
+   "oldfieldname": "naming_series",
+   "oldfieldtype": "Select",
+   "options": "HR-CV-T11-",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full name"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email (Not Obligatory)",
+   "options": "Email"
+  },
+  {
+   "fieldname": "column_break_gmyt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  },
+  {
+   "fieldname": "other_nationality",
+   "fieldtype": "Data",
+   "label": "Other Nationality"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "oldfieldname": "gender",
+   "oldfieldtype": "Select",
+   "options": "\nMale\nFemale"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "oldfieldname": "date_of_birth",
+   "oldfieldtype": "Date"
+  },
+  {
+   "fieldname": "cell_number",
+   "fieldtype": "Data",
+   "label": "Mobile",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "column_break_htzy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Select",
+   "label": "Country",
+   "options": "\nYemen\nColombia\nSudan\nSyria\nTurkey\nVenezuela\nKosovo\nUSA\nOther"
+  },
+  {
+   "depends_on": "eval: doc.country == 'Other';",
+   "fieldname": "other_country",
+   "fieldtype": "Data",
+   "label": "Other Country"
+  },
+  {
+   "depends_on": "eval: doc.country == 'Yemen';",
+   "fieldname": "type_of_area",
+   "fieldtype": "Select",
+   "label": "Type of Area",
+   "options": "\nNorth\nSouth"
+  },
+  {
+   "depends_on": "eval: doc.country == 'Yemen';",
+   "fieldname": "gov",
+   "fieldtype": "Select",
+   "label": "Gov",
+   "options": "\nAbyan\nAden\nAl Bayda\nAl Dhale'e\nAl Hudaydah\nAl Jawf\nAl Maharah\nAl Mahwit\nAmanat Al Asimah\nAmran\nDhamar\nHadramaut\nHajjah\nIbb\nLahj\nMarib\nRaymah\nSa'ada\nSana'a\nShabwah\nSocotra\nTaizz"
+  },
+  {
+   "depends_on": "eval: ['Colombia', 'Sudan', 'Syria', 'Turkey', 'Venezuela', 'Kosovo', 'USA', 'Other'].includes(doc.country);",
+   "fieldname": "governorate",
+   "fieldtype": "Text",
+   "label": "Governorate"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Text",
+   "label": "District",
+   "mandatory_depends_on": "cur_frm.fields_dict['district'].df.mandatory_depends_on = `doc.docstatus == 1`;"
+  },
+  {
+   "fieldname": "current_address",
+   "fieldtype": "Text",
+   "label": "Current Address"
+  },
+  {
+   "fieldname": "tab_break_nr9v",
+   "fieldtype": "Tab Break",
+   "label": "Qualification"
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Table",
+   "label": "Language",
+   "options": "Lan"
+  },
+  {
+   "fieldname": "do_you_have_a_training_of_the_trainers_tot_certificate",
+   "fieldtype": "Select",
+   "label": "Do you have a Training of the Trainers (TOT) certificate?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.do_you_have_a_training_of_the_trainers_tot_certificate == 'Yes';",
+   "fieldname": "what_topic_of_certificate",
+   "fieldtype": "Text",
+   "label": "What Topic Of Certificate"
+  },
+  {
+   "fieldname": "how_many_master_certificate_do_you_have",
+   "fieldtype": "Int",
+   "label": "How many Master Certificate do you have? ",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "masters_certificate",
+   "fieldtype": "Table",
+   "label": "Master's Certificate",
+   "options": "Master"
+  },
+  {
+   "fieldname": "phds_certificate",
+   "fieldtype": "Table",
+   "label": "PH.Ds Certificate",
+   "options": "Ph D"
+  },
+  {
+   "fieldname": "how_many_phd_certificate_do_you_have",
+   "fieldtype": "Int",
+   "label": "How many Ph.D Certificate do you have?",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "column_break_szfa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "training_courses",
+   "fieldtype": "Text",
+   "label": "Training Courses/Certificates"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Table MultiSelect",
+   "label": "Qualification",
+   "options": "Qualification Link"
+  },
+  {
+   "fieldname": "how_many_diploma_certificate_do_you_have",
+   "fieldtype": "Int",
+   "label": "How many Diploma Certificate do you have?",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "diploma_certificate",
+   "fieldtype": "Table",
+   "label": "Diploma Certificate",
+   "options": "Diploma"
+  },
+  {
+   "fieldname": "how_many_bachelors_certificate_do_you_have",
+   "fieldtype": "Int",
+   "label": "How many Bachelor's Certificate do you have?",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "bachelors_certificate",
+   "fieldtype": "Table",
+   "label": "Bachelor's Certificate",
+   "options": "Bachelor"
+  },
+  {
+   "fieldname": "other_certificate",
+   "fieldtype": "Table",
+   "label": "Other Certificate",
+   "options": "Other Qualification"
+  },
+  {
+   "fieldname": "experience_tab",
+   "fieldtype": "Tab Break",
+   "label": "Experience"
+  },
+  {
+   "fieldname": "have_you_work_with",
+   "fieldtype": "Table MultiSelect",
+   "label": "Have You Work With",
+   "options": "Work With Link"
+  },
+  {
+   "fieldname": "humanitarian_and_other_technical_sectors",
+   "fieldtype": "Table MultiSelect",
+   "label": "Humanitarian And Other Technical Sectors",
+   "options": "Humanitarian Technical Sectors Link"
+  },
+  {
+   "fieldname": "mention_other_sector",
+   "fieldtype": "Text",
+   "label": "Mention Other Sector"
+  },
+  {
+   "fieldname": "references",
+   "fieldtype": "Table",
+   "label": "References",
+   "options": "References"
+  },
+  {
+   "fieldname": "column_break_eiup",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "have_you_worked_with_i_aps",
+   "fieldtype": "Select",
+   "label": "Have You Worked With I-APS",
+   "options": "\nYes\nNo"
+  },
+  {
+   "depends_on": "eval:doc.have_you_worked_with_i_aps == 'Yes';",
+   "fieldname": "what_is_the_nature_of_the_work_with_the_company",
+   "fieldtype": "Select",
+   "label": "What Is The Nature Of The Work With The Company?",
+   "options": "\nHome\nOffice\nField"
+  },
+  {
+   "fieldname": "number_of_years_of_experience",
+   "fieldtype": "Int",
+   "label": "Number Of Years Of Experience",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "how_many_jobs_have_you_had",
+   "fieldtype": "Int",
+   "label": "How many jobs have you had?"
+  },
+  {
+   "fieldname": "professional_experience",
+   "fieldtype": "Table",
+   "label": "Professional Experience",
+   "options": "Professional Experience"
+  },
+  {
+   "fieldname": "section_break_kjwh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "id_card",
+   "fieldtype": "Attach",
+   "label": "ID Carf"
+  },
+  {
+   "fieldname": "front_id_card",
+   "fieldtype": "Attach",
+   "label": "Front ID Card"
+  },
+  {
+   "fieldname": "back_id_card",
+   "fieldtype": "Attach",
+   "label": "Back ID Card"
+  },
+  {
+   "fieldname": "passport",
+   "fieldtype": "Attach",
+   "label": "Passport"
+  },
+  {
+   "fieldname": "cv",
+   "fieldtype": "Attach",
+   "label": "Please upload your CV"
+  },
+  {
+   "fieldname": "agree_share_your_cv",
+   "fieldtype": "Select",
+   "label": "Do You Agree That i-APS Can Share Your C.V With Other Clients/Organizations?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "post",
+   "fieldtype": "Text",
+   "label": "What posts have you published?"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "i-APS CV Template",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "i-APS CV Template",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "icon": "fa fa-user",
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-09-14 13:33:48.421878",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "i-APS CV Template 11",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee"
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "full_name,gov",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "full_name"
+}

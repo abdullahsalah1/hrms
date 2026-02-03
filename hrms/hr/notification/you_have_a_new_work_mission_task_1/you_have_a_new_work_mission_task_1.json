@@ -1,0 +1,32 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.workflow_state == \"Approved by Operations\"",
+ "creation": "2025-03-03 11:40:25.195267",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Work Mission Task",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "Dear Manager <br>\nI hope things are going well with you, <br>\nYou have a new Work Mission Task, Please press <a href=\"https://i-aps.app/app/work-mission-task/{{doc.name}}\"> here</a> to approve it <br>\nbest <br>",
+ "message_type": "Markdown",
+ "modified": "2025-03-03 13:24:41.602143",
+ "modified_by": "adahan@i-aps.com",
+ "module": "HR",
+ "name": "You have a new Work Mission Task 1",
+ "owner": "adahan@i-aps.com",
+ "recipients": [
+  {
+   "receiver_by_role": "Academics User"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "Admin",
+ "sender_email": "erpsystem129@gmail.com",
+ "subject": "You have a new Work Mission Task",
+ "value_changed": "workflow_state"
+}

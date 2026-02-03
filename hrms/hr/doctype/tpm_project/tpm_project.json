@@ -1,0 +1,536 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-01-06 01:54:17.878083",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "memo_section",
+  "column_break_gqum",
+  "project_name",
+  "contracting_date",
+  "project_code",
+  "project_codeas_the_contracted",
+  "ending",
+  "south",
+  "north",
+  "supported_docment",
+  "governarate",
+  "district",
+  "project_manager",
+  "project_manager_name",
+  "section",
+  "project_assistant",
+  "acco5untant",
+  "accountant",
+  "naming_series",
+  "permits_and_access_tab",
+  "memo_generator_section",
+  "to",
+  "donor",
+  "client",
+  "project_name1",
+  "district1",
+  "governarate1",
+  "code",
+  "memo_scanned_signed",
+  "implementation_plan_section",
+  "\u062a\u0627\u0631\u064a\u062e_\u0627\u0646\u062a\u0647\u0627\u0621_\u0627\u0644\u0627\u062a\u0641\u0627\u0642\u064a\u0647",
+  "implementation_plan_template",
+  "permits_and_access_approvel",
+  "hr_and_contracting_tab",
+  "request_contracts",
+  "section_break_vcjs",
+  "project_otract",
+  "contracts_template",
+  "contracts_approvel",
+  "progress_report_tab",
+  "table_qhqg",
+  "progress_template",
+  "progress_report_approvel",
+  "fainance_tab",
+  "brnsh",
+  "day",
+  "date",
+  "statement",
+  "table_amdl",
+  "working_days_section",
+  "working_days",
+  "section_break_ngqn",
+  "attachemnt_1",
+  "attachemnt_2",
+  "attachemnt_3",
+  "finance_approvel1",
+  "data_collection_and_rporting_tab",
+  "2",
+  "cleaned_data",
+  "first_report",
+  "mid_report",
+  "final_report",
+  "data_approvel",
+  "finall_checklist_tab",
+  "project_s",
+  "permits_and_access",
+  "hr_and_contracting",
+  "progress_report",
+  "fainance",
+  "data_collection_and_rporting",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "label": "Project Name"
+  },
+  {
+   "fieldname": "project_code",
+   "fieldtype": "Data",
+   "label": "Project Code"
+  },
+  {
+   "fieldname": "project_manager",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Project Manager",
+   "options": "User",
+   "search_index": 1
+  },
+  {
+   "fieldname": "project_assistant",
+   "fieldtype": "Link",
+   "label": "Project Assistant",
+   "options": "User"
+  },
+  {
+   "fieldname": "supported_docment",
+   "fieldtype": "Data",
+   "label": "Supported Docment"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming series",
+   "options": "i-APS.-.P.-.YY.-.####",
+   "read_only": 1
+  },
+  {
+   "fieldname": "permits_and_access_tab",
+   "fieldtype": "Tab Break",
+   "label": "Permits And Access"
+  },
+  {
+   "default": "/files/Enumerator Contracts.csv\n",
+   "fieldname": "hr_and_contracting_tab",
+   "fieldtype": "Tab Break",
+   "label": "HR And Contracting"
+  },
+  {
+   "fieldname": "fainance_tab",
+   "fieldtype": "Tab Break",
+   "label": "Fainance"
+  },
+  {
+   "fieldname": "data_collection_and_rporting_tab",
+   "fieldtype": "Tab Break",
+   "label": "Data Collection And Rporting"
+  },
+  {
+   "fieldname": "finall_checklist_tab",
+   "fieldtype": "Tab Break",
+   "label": "Finall Checklist"
+  },
+  {
+   "fieldname": "2",
+   "fieldtype": "Attach",
+   "label": "Row data"
+  },
+  {
+   "fieldname": "contracts_approvel",
+   "fieldtype": "Select",
+   "label": "Contracts Approvel",
+   "options": "\nApproved"
+  },
+  {
+   "fieldname": "cleaned_data",
+   "fieldtype": "Attach",
+   "label": "Analized Data"
+  },
+  {
+   "fieldname": "first_report",
+   "fieldtype": "Attach",
+   "label": "First Report"
+  },
+  {
+   "fieldname": "mid_report",
+   "fieldtype": "Attach",
+   "label": "first Report "
+  },
+  {
+   "fieldname": "final_report",
+   "fieldtype": "Attach",
+   "label": "Final Report"
+  },
+  {
+   "fieldname": "request_contracts",
+   "fieldtype": "Select",
+   "label": "Request Contracts",
+   "options": "\nSend"
+  },
+  {
+   "fieldname": "section_break_vcjs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "memo_generator_section",
+   "fieldtype": "Section Break",
+   "label": "Memo Generator "
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Data",
+   "label": "Client"
+  },
+  {
+   "fieldname": "project_name1",
+   "fieldtype": "Data",
+   "label": "project name"
+  },
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "label": "project Code"
+  },
+  {
+   "fieldname": "memo_section",
+   "fieldtype": "Section Break",
+   "label": "Memo"
+  },
+  {
+   "fieldname": "donor",
+   "fieldtype": "Data",
+   "label": "Donor"
+  },
+  {
+   "fieldname": "memo_scanned_signed",
+   "fieldtype": "Attach",
+   "label": "Memo Scanned Signed"
+  },
+  {
+   "default": "0",
+   "fieldname": "south",
+   "fieldtype": "Check",
+   "label": "South"
+  },
+  {
+   "default": "0",
+   "fieldname": "north",
+   "fieldtype": "Check",
+   "label": "North"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Data",
+   "label": "To"
+  },
+  {
+   "fieldname": "implementation_plan_section",
+   "fieldtype": "Section Break",
+   "label": "Implementation Plan"
+  },
+  {
+   "fieldname": "\u062a\u0627\u0631\u064a\u062e_\u0627\u0646\u062a\u0647\u0627\u0621_\u0627\u0644\u0627\u062a\u0641\u0627\u0642\u064a\u0647",
+   "fieldtype": "Attach",
+   "label": " Implementation Plan"
+  },
+  {
+   "fieldname": "column_break_gqum",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "day",
+   "fieldtype": "Select",
+   "label": "Day",
+   "options": "Sunday\nSaturday\nFriday\nThursday\nWednesday\nMonday\nTuesday"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "date"
+  },
+  {
+   "fieldname": "statement",
+   "fieldtype": "Data",
+   "label": "statement"
+  },
+  {
+   "fieldname": "working_days",
+   "fieldtype": "Table",
+   "label": "AL-Kurimai Payment",
+   "options": "Fainance payee"
+  },
+  {
+   "fieldname": "section_break_ngqn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "attachemnt_1",
+   "fieldtype": "Attach",
+   "label": "Attachemnt 1"
+  },
+  {
+   "fieldname": "attachemnt_2",
+   "fieldtype": "Attach",
+   "label": "Attachemnt 2"
+  },
+  {
+   "fieldname": "attachemnt_3",
+   "fieldtype": "Attach",
+   "label": "Attachemnt 3"
+  },
+  {
+   "fieldname": "working_days_section",
+   "fieldtype": "Section Break",
+   "label": "working days"
+  },
+  {
+   "default": "https://i-aps.app/files/Enumerator%20Contracts.csv",
+   "fieldname": "contracts_template",
+   "fieldtype": "Attach",
+   "label": "Contracts Template",
+   "options": "https://i-aps.app/files/Enumerator%20Contracts.csv"
+  },
+  {
+   "fieldname": "progress_report_tab",
+   "fieldtype": "Tab Break",
+   "label": "Progress Report"
+  },
+  {
+   "fieldname": "table_qhqg",
+   "fieldtype": "Table",
+   "options": "progress project table"
+  },
+  {
+   "fetch_from": "acco5untant.full_name",
+   "fieldname": "accountant",
+   "fieldtype": "Data",
+   "label": "Accountant Name",
+   "options": "User"
+  },
+  {
+   "fieldname": "acco5untant",
+   "fieldtype": "Link",
+   "label": "Accountant",
+   "options": "User"
+  },
+  {
+   "default": "https://i-aps.app/files/Enumerator%20Contracts.csv",
+   "fieldname": "progress_template",
+   "fieldtype": "Attach",
+   "label": "Progress Template",
+   "options": "https://i-aps.app/files/Enumerator%20Contracts.csv"
+  },
+  {
+   "fieldname": "project_otract",
+   "fieldtype": "Table",
+   "label": "contracts",
+   "options": "project Cotract"
+  },
+  {
+   "fieldname": "ending",
+   "fieldtype": "Date",
+   "label": "Ending Date"
+  },
+  {
+   "fieldname": "brnsh",
+   "fieldtype": "Select",
+   "label": "Branch",
+   "options": "Aden\nSana'a\nMarib"
+  },
+  {
+   "fieldname": "contracting_date",
+   "fieldtype": "Date",
+   "label": "Contracting Date"
+  },
+  {
+   "fieldname": "project_s",
+   "fieldtype": "Select",
+   "label": "Project Status",
+   "options": "\nOngoing\nClosed"
+  },
+  {
+   "fetch_from": "project_manager.full_name",
+   "fieldname": "project_manager_name",
+   "fieldtype": "Data",
+   "label": "Proect Manager name"
+  },
+  {
+   "default": "0",
+   "fieldname": "permits_and_access",
+   "fieldtype": "Check",
+   "label": "Permits And Access"
+  },
+  {
+   "default": "0",
+   "fieldname": "hr_and_contracting",
+   "fieldtype": "Check",
+   "label": "HR And Contracting"
+  },
+  {
+   "default": "0",
+   "fieldname": "progress_report",
+   "fieldtype": "Check",
+   "label": "Progress Report"
+  },
+  {
+   "default": "0",
+   "fieldname": "fainance",
+   "fieldtype": "Check",
+   "label": "Fainance"
+  },
+  {
+   "default": "0",
+   "fieldname": "data_collection_and_rporting",
+   "fieldtype": "Check",
+   "label": "Data Collection And Rporting"
+  },
+  {
+   "default": "/private/files/Performance Indicator Matrix - Round7.docx",
+   "fieldname": "implementation_plan_template",
+   "fieldtype": "Data",
+   "label": " Implementation Plan Template",
+   "options": "/private/files/Performance Indicator Matrix - Round7.docx"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "TPM Project",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "table_amdl",
+   "fieldtype": "Table",
+   "options": "project Cotract"
+  },
+  {
+   "fieldname": "permits_and_access_approvel",
+   "fieldtype": "Select",
+   "label": "Permits And Access Approvel",
+   "options": "\nApproved"
+  },
+  {
+   "fieldname": "progress_report_approvel",
+   "fieldtype": "Select",
+   "label": "Progress Report Approvel",
+   "options": "\nApproved"
+  },
+  {
+   "fieldname": "finance_approvel1",
+   "fieldtype": "Select",
+   "label": "Finance Approvel",
+   "options": "\nApproved"
+  },
+  {
+   "fieldname": "data_approvel",
+   "fieldtype": "Select",
+   "label": "data Approvel",
+   "options": "\nApproved"
+  },
+  {
+   "fieldname": "section",
+   "fieldtype": "Select",
+   "label": "Section",
+   "options": "\u0627\u0644\u0623\u0645\u0646 \u0627\u0644\u063a\u0630\u0627\u0626\u064a (Food Security)\n\u0627\u0644\u0635\u062d\u0629 (Health)\n\u0627\u0644\u062a\u063a\u0630\u064a\u0629 (Nutrition)\n\u0627\u0644\u0645\u064a\u0627\u0647 \u0648\u0627\u0644\u0625\u0635\u062d\u0627\u062d \u0627\u0644\u0628\u064a\u0626\u064a \u0648\u0627\u0644\u0646\u0638\u0627\u0641\u0629 \u0627\u0644\u0635\u062d\u064a\u0629 (WASH)\n\u0627\u0644\u0645\u0623\u0648\u0649 (Shelter)\n\u0627\u0644\u062a\u0639\u0644\u064a\u0645 (Education)\n\u0627\u0644\u062d\u0645\u0627\u064a\u0629 (Protection)\n\u0627\u0644\u062a\u0646\u0633\u064a\u0642 \u0648\u0625\u062f\u0627\u0631\u0629 \u0627\u0644\u0645\u062e\u064a\u0645\u0627\u062a (Camp Coordination and Camp Management - CCCM)\n\u0627\u0644\u0645\u0648\u0627\u062f \u063a\u064a\u0631 \u0627\u0644\u063a\u0630\u0627\u0626\u064a\u0629 (NFI) (Non-Food Items) \u2013 \u063a\u0627\u0644\u0628\u064b\u0627 \u062a\u0646\u062f\u0631\u062c \u0636\u0645\u0646 \u0642\u0637\u0627\u0639 \u0627\u0644\u0645\u0623\u0648\u0649"
+  },
+  {
+   "fieldname": "governarate",
+   "fieldtype": "Select",
+   "label": "Governarate",
+   "options": "Sana'a\nAden\nTaiz\nIbb\nHadhramaut\nAl-Hodeidah\nDhamar\nAl-Bayda\nAl-Mahwit\nAmran\nMarib\nAl-Jawf\nSaada\nLahij\nAbyan\nShabwah\nAl-Mahra\nRaymah"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Select",
+   "label": "District",
+   "options": "Arhab\nBani Dhabyan\nBani Hushaysh\nHamdan\nJihanah\nKhawlan\nManakhah\nNihm\nSa'fan\nSanhan and Bani Bahlul\nBilad Ar Rus\nCrater\nAl-Mualla\nAl-Tawahi\nAl-Mansoura\nSheikh Othman\nDar Saad\nAl-Buraiqa\nKhormaksar\nAl-Mudhaffar\nAl-Qahirah\nAl-Ta\u2019iziyah\nMaqbanah\nShar\u2019abs-Salam\nShar\u2019ab ar-Rawnah\nIbb City\nAl-Qafr\nAl-Dhihar\nAl-Saddah\nAl-Nadirah\nMukalla\nSayun\nTarim\nAl-Shihr\nGhayl Ba Wazir\nAl-Hali\nAl-Hawak\nZabid\nBayt al-Faqih\nBajil\nDhamar City\nAl-Hada\nMa\u2019bar\nAnss\nRadaa\nAl-Zahir\nAl-Bayda City\nAl-Ghaydah\nSayhut\nHat\nSaada City\nKitaf wa Al-Boqe\u2019e\nMajz\nAl Dhaher\nAtaq\nBayhan\nNisab\nZinjibar\nLawdar\nMudiyah\nAl-Houta\nRadfan\nTuban\nAl Jabin\nAl-Salafiyah\nBani Sa\u2019d\nAmran City\nRaydah\nAl-Hazm\nKhabb wa ash Sha\u2019af\nHarib\nSerwah\nRaghwan"
+  },
+  {
+   "fieldname": "project_codeas_the_contracted",
+   "fieldtype": "Data",
+   "label": "Project Code(as the contracted)"
+  },
+  {
+   "fieldname": "district1",
+   "fieldtype": "Data",
+   "label": "Governarate"
+  },
+  {
+   "fieldname": "governarate1",
+   "fieldtype": "Data",
+   "label": "Governarate"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-05-21 13:48:26.466416",
+ "modified_by": "Administrator",
+ "module": "HR",
+ "name": "TPM Project",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
